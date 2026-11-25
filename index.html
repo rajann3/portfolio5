@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rajan Shirname, a B.Tech Computer Science student.">
+  <title>Rajan Shirname | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-box">
+      <a class="logo" href="#home">Rajan Shirname</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-box">
+        <div class="hero-text">
+          <p class="tag">Welcome to My Portfolio</p>
+          <h1>Hi, I am Rajan Shirname</h1>
+          <p>First-year B.Tech Computer Science student learning HTML, CSS, Python, and building simple web projects.</p>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-img">
+          <img src="assets/profile.jpg" alt="Rajan Shirname profile photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am Rajan Shirname, a first-year B.Tech Computer Science student at Alard Institutes in Pune (2026–2030). I enjoy practicing front-end web design, writing basic Python scripts, and learning how to build clean websites. My goal is to grow into a capable software engineer and create helpful tools.</p>
+    </section>
+
+    <section id="skills" class="section tint-bg">
+      <h2>My Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item"><p>HTML5 — 75%</p><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+        <div class="skill-item"><p>CSS3 — 70%</p><div class="bar"><div class="fill" style="width: 70%"></div></div></div>
+        <div class="skill-item"><p>Python — 75%</p><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
+        <div class="skill-item"><p>Git &amp; GitHub — 55%</p><div class="bar"><div class="fill" style="width: 55%"></div></div></div>
+        <div class="skill-item"><p>Problem Solving — 65%</p><div class="bar"><div class="fill" style="width: 65%"></div></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="assets/signspeak-3d.png" alt="SignSpeak 3D hand-gesture AI project preview">
+          <h3>SignSpeak</h3>
+          <p>Gesture-to-text communication prototype built to explore accessible interfaces and real-time hand tracking.</p>
+          <div class="project-links">
+            <a href="https://rajann3.github.io/portfolio1/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="https://github.com/rajann3/signSpeak" target="_blank" rel="noopener noreferrer">GitHub Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/ledgerly.png" alt="Ledgerly Budget Tracker app preview">
+          <h3>Ledgerly Budget Tracker</h3>
+          <p>Budget tracker layout to monitor monthly income, expenses, category limits, and savings goals.</p>
+          <div class="project-links"><a href="projects/ledgerly/index.html">Open Project</a></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section tint-bg">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Enter subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Rajan Shirname | &copy; 2026 All rights reserved</p>
+    <div class="links">
+      <a href="https://github.com/rajann3" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/rajan-shirname-b9884a446/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:r4jann3@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
+</html>

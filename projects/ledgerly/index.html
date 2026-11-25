@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b162d">
+  <title>Ledgerly | Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="../../index.html"><span>◆</span> Ledgerly</a>
+      <p class="eyebrow">Workspace</p>
+      <nav aria-label="Ledgerly navigation">
+        <a class="active" href="#overview">▦ Overview</a>
+        <a href="#transactions">↗ Transactions</a>
+        <a href="#budgets">◴ Budgets</a>
+        <a href="#goal">◎ Goals</a>
+      </nav>
+      <p class="side-note"><strong>Personal finances</strong>All data stays in this browser.</p>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div><h1>Good morning, Rajan</h1><p>Here’s your financial snapshot.</p></div>
+        <button class="primary" id="addButton">+ Add transaction</button>
+      </header>
+
+      <section id="overview" class="metrics" aria-label="Monthly overview">
+        <article><p>Available balance</p><strong id="balance">₹0</strong><small>Across all tracked accounts</small></article>
+        <article><p>Income</p><strong id="income">₹0</strong><small class="positive">↑ 8.2% compared with last month</small></article>
+        <article><p>Expenses</p><strong id="expenses">₹0</strong><small id="expenseNote">0% of monthly income</small></article>
+      </section>
+
+      <section class="grid">
+        <article class="panel" id="transactions"><div class="panel-head"><div><h2>Recent transactions</h2><p>Your latest activity</p></div><button id="clearButton" class="link">Clear all</button></div><div id="transactionContent"></div></article>
+        <article class="panel" id="budgets"><div class="panel-head"><div><h2>Budget health</h2><p>Your spending by category</p></div></div><div class="budget-list" id="budgetList"></div></article>
+      </section>
+
+      <section class="panel goal" id="goal"><div><h2>Savings goal</h2><p id="goalTarget">of ₹150,000 target</p></div><strong id="goalMoney">₹0</strong><div class="progress"><i id="goalBar"></i></div><p id="goalStatus"></p></section>
+    </main>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <form class="modal-card" id="transactionForm">
+      <div class="modal-head"><h2>Add transaction</h2><button type="button" class="close" id="closeButton" aria-label="Close">×</button></div>
+      <label>Description<input id="description" required placeholder="e.g. Grocery shopping"></label>
+      <label>Category<select id="category"><option>Food & dining</option><option>Home & utilities</option><option>Transport</option><option>Shopping</option><option>Salary</option><option>Freelance</option></select></label>
+      <label>Type<select id="type"><option value="expense">Expense</option><option value="income">Income</option></select></label>
+      <label>Amount (₹)<input id="amount" type="number" min="1" required></label>
+      <div class="actions"><button type="button" class="secondary" id="cancelButton">Cancel</button><button class="primary">Save transaction</button></div>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
